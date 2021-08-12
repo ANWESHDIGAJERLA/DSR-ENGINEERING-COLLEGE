@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #fff;
+    text-decoration: none;
+    margin-top: 500px;
+}
+                     nav{
+                        background:maroon;
+                        height: 100px;
+                        width: 100%;
+                        color: white;
+                        text-decoration: none;
+                        position: fixed;
+                        z-index: 8;
+                    }
+                    .logo img{
+                        width: 300px;
+                        height: 100px;
+                        float: left;
+                        margin-left: 2%;
+                    }
+                    nav ul{
+                        float: right;
+                        text-decoration: none;
+                        list-style: none;
+                        margin: 20px 0px 0px 0px;
+                        color: white;
+                        margin-right: 7%;
+                    }
+                    nav ul li{
+                        display: inline-block;
+                        line-height: 50px;
+                        margin: 0px 7px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                    nav ul li a{
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        padding:6px 13px ;
+                        border-radius: 3px;
+                        text-decoration: none;
+                    }
+                    nav ul li a:hover{
+                        color: rgb(226, 32, 106);
+                        text-decoration: none;
+                    }
+                   a.active,a:hover{
+                        background-color: lightgreen ;
+                        text-decoration: none;
+                        transition: .5s;
+                    }
+                    .checkbtn{
+                        font-size: 30px;
+                        color: white;
+                        float: right;
+                        line-height: 45px;
+                        margin: 0px 40px 0px 0px;
+                        cursor: pointer;
+                        display: none;
+                        margin-top: 30px;
+                    }
+                    #check{
+                        display: none;
+                    }
+                    
+                    @media (max-width:952px){
+                        nav ul li a{
+                            font-size: 20px;
+                        }
+                    }
+                    @media (max-width:1540px){
+
+                        .checkbtn{
+                            display: block;
+                        }
+                        ul{
+                            position: fixed;
+                            width: 250px;
+                            height: 100vh;
+                            background:#2c3e50 ;
+                            top:80px;
+                            left:-100%;
+                            text-align: center;
+                            transition: all .5s;
+                            overflow: scroll;
+                            z-index: 7;
+                        }
+                        nav ul li{
+                            display: block;
+                            margin: 50px 0;
+                            line-height: 20px;
+                        }
+                        nav ul li a{
+                            font-size: 20px;
+                        }
+                         a:hover,a.active{
+                            background: lightgreen;
+                            color: #0082e6;
+                        }
+                        #check:checked~ul{
+                            left: 0;
+                        }
+                        a:hover:checked~ ul{
+                            left: 0;
+                        }
+                    }
+                    
+
+                    .headmain{
+                        color: white;
+                        padding-top:30px ;
+                        padding-bottom: 30px;
+                        display: flex;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        margin-bottom: 5%;
+                        margin-top: 100px;
+                        background-color: black;
+                    }
+
+                    .headmain .mname{
+                        font-size: 30px;
+                    }
+                    .headmain .fas, .far{
+                        font-size: 50px;
+                    }
+
+                    .headmain .call{
+                        margin: 20px 10% 0% 10%;
+                    }
+                    .maps{
+                        width: 100%;
+                    }
+                      
+                      footer{
+                          background-color: maroon;
+                          color: white;
+                          padding-top:100px ;
+                          padding-bottom:100px ;
+                      }
+                      .fdiv1 .fimg{
+                          width: 300px;
+                          height: 100px;
+                      }
+                      .fdiv{
+                        display: flex;
+                        justify-content: space-around;
+                        text-decoration: none;
+                      }
+                      .fdiv1 a{
+                          margin-left: 20px;
+                          text-align: center;
+                      }
+                      .fdiv1 a:hover{
+                          background: none;
+                          color: silver;
+                      }
+                      .fdiv1 p{
+                          margin-left: 100px;
+                      }
+                      .fdiv2 p{
+                          border-bottom: solid orange 3px;
+                          text-align: center;
+                      }
+                      .fdiv3 p{
+                          border-bottom: solid orange 3px;
+                          text-align: center;
+                      }
+                      .fdiv4 p{
+                          border-bottom: solid orange 3px;
+                          text-align: center;
+                      }
+                      .fdiv2 a{
+                          text-decoration: none;
+                      }
+                      .fdiv3 a{
+                          text-decoration: none;
+                      }
+                      .fdiv4 a{
+                          text-decoration: none;
+                      }
+                      .fdiv2 a:hover{
+                          background: none;
+                          color: wheat;
+                          text-decoration: none;
+                      }
+                      .fdiv3 a:hover{
+                          background: none;
+                          color: wheat;
+                          text-decoration: none;
+                      }
+                      .fdiv4 a:hover{
+                        color: wheat;
+                        text-decoration: none;
+                        background: none;
+                      }
+                      .fdiv1 .fa-facebook{
+                          text-align: center;
+                          margin-left:100px ;
+                      }
+                      .fdiv1 i{
+                          text-align: center;
+                          margin-left:10px ;
+                      }
